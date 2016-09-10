@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Arreglos</title>
+</head>
+<body>
+	
+    <script>
+    var amigos=["Gervacio", "Andrea", "Laura", "Jesso"];
+    //document.write(amigos[0]);
+    //modificar el arreglo
+    //amigos[0]="Jesso";
+
+    //borrar un valor
+    //amigos[0]="";
+
+
+    //agregar valor
+    //amigos[3]="Silvia";
+    //document.write(amigos);
+
+    //document.write("Tienes " + amigos.length + " amigos");
+
+//agregar amigos
+    amigos[amigos.length]= "Silvia";
+    amigos.push("Luis", "Maria");
+   	//document.write(amigos);
+
+//eliminar un elemento
+	amigos.pop();
+	//document.write(amigos);
+
+	var amigos2= ["Marta", "sofia"];
+
+	//juntar dos arreglos
+	var amigos3= amigos.concat(amigos2);
+	//document.write(amigos3);
+
+	//metodo join
+	//document.write(amigos.join(" : "));
+	//document.write(amigos.join(" - "));
+
+	//ordenar elementos alfabeticamente
+	var ordenados= amigos.sort();
+	var ordenados2= amigos.reverse(); //acomoda al reves los arreglos
+	document.write(ordenados2);
+    
+    </script>
+</body>
+</html>
