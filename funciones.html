@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Funciones</title>
+</head>
+<body>
+    <form action="">
+        <input type="text" id="numero1">
+        <input type="text" id="numero2">
+        <input type="button" value="sumar" onclick="alert(suma());">
+    </form>
+
+    <script>
+    function saludo(nombre){
+    	document.write("Hola, que tengas buen dia " + nombre);
+    }
+    //tb se puede poner var suma = function(numero1, numero2)
+    function suma(numero1, numero2){
+    	var result= numero1+numero2;
+    	return(result);
+
+    }
+
+    
+    function numeroMaximo (numero1, numero2){
+
+        if (numero1<numero2){
+            return numero2;
+        }
+        else{
+            return numero1;
+    }
+    }
+   //saludo("Melanie");
+   //document.write(suma(23, 24));
+   //document.write(numeroMaximo(15, 5));
+
+   //ejemplo de calculadora con formulario
+   var suma= function(numero1, numero2){
+    var numero1=parseFloat(document.getElementById("numero1").value);
+    var numero2=parseFloat(document.getElementById("numero2").value);
+    var result= numero1+numero2;
+    return result;
+    
+   }
+
+    </script>
+</body>
+</html>
