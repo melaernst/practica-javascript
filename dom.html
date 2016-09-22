@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document Object Model</title>
+</head>
+<body>
+<h1 id="titulo">Titulo de nuestro sitio web</h1>
+<p>no se cualquier cosa que se me ocurra</p>
+
+<p id="segundo">no se que poner aca tampoco</p>
+
+<p>Gervacio Vallejos Garcia TE AMO</p>
+    <script>
+    //el dom costa de dos elementos primarios, el head y el body a estos se los denominan nodos. El objetivo del dom es poder acceder a los elementos de una manera muy facil
+
+    //acceder a los elementos por ejemplo <p> por etiquetas.
+    var elementosP=document.getElementsByTagName("p");
+    //cuando en la consola pongo elementosP me muestra como un arreglo HTML y luego cuando pongo elementosP[0].innerHTML me muestra puntualmente el parrafo.
+    //para modificar alguno de los p hacemos por ejemplo elementosP[0]="lo que queramos poner"
+
+    //otra forma de acceder a los elementos
+    var segundoParrafo= document.getElementById("segundo");
+    var hola=segundoParrafo.innerHTML;
+    document.write(hola);
+
+    
+    </script>
+</body>
+</html>

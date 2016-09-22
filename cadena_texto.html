@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Metodos para cadenas de texto</title>
+</head>
+<body>
+	
+    <script>
+    var texto= "Ernst Melanie";
+
+    //muestra un texto a partir de la posicion 3 st Melanie
+   //var nuevoTexto= texto.substring(3);
+
+
+   //var nuevoTexto= texto.substr(0, 6);
+   //return Ernst
+
+  // var nuevoTexto= texto.indexOf("a");
+   //devuelve la posicion donde se encuentra la letra a que es 9
+   //indexOf("e",7 )busca a partir de la posicion 7
+   var texto2= texto.indexOf("e") + 1;
+  var nuevoTexto= texto.indexOf("e", texto2);
+   var nuevoTexto= texto.lastIndexOf("e"); //devuelve la ultima e
+
+   var nuevoTexto= texto.replace(texto, "Melanie Ernst");//reemplaza texto con el nuevo texto
+   var nuevoTexto= texto.replace("Ernst", "Melanie Ernst");//reemplaza la palabra Ernst con el nuevo texto
+
+   var nuevoTexto= texto.toLowerCase();//todo minusculas
+   var nuevoTexto= texto.toUpperCase();//todo mayuscula
+   
+   document.write(nuevoTexto);
+	</script>
+</body>
+</html>
