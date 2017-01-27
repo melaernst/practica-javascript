@@ -13,7 +13,7 @@
 <p>Hola mundo!!!</p>
 
 <ol id="lista">
-    <li>
+    <li id="primero">
         We have many reasons to be Happy
     </li>
     <li>
@@ -40,9 +40,28 @@
             nuevo_elemento.appendChild(nodo_texto);
     //var padre= document.getElementById("lista");
     //obtener todos los documentos que tengan li
-        var padre = document.getElementsByTagName("li")[0].parentNode;
-            padre.appendChild(nuevo_elemento);
+//        var padre = document.getElementsByTagName("li")[0].parentNode;
+//            padre.appendChild(nuevo_elemento);
+
+        // modificando y accediento al contenido de un elemento
+//        var elemento_modificar =document.createElement("li"),
+//                contentido= document.createTextNode("Second new Text");
+//        elemento_modificar.appendChild(contentido);
+
+//        var primerElemento= document.getElementById("primero");
+//        primerElemento.textContent= "Hola soy Marta";
+//        primerElemento.innerHTML= "Hola soy <i>Marta</i>"
+
+        //reemplazando nodos del DOM
+        var padre_uno=document.getElementsByTagName("li")[0].parentNode;
+         var reference=document.getElementsByTagName("li")[0];
+//        padre_uno.replaceChild(nuevo_elemento, reference);
+
+        //eliminar elementos
+        padre_uno.removeChild(reference);
 
     </script>
+
+
 </body>
 </html>
