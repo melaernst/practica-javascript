@@ -11,6 +11,16 @@
 <p id="segundo">no se que poner aca tampoco</p>
 
 <p>Hola mundo!!!</p>
+
+<ol id="lista">
+    <li>
+        We have many reasons to be Happy
+    </li>
+    <li>
+        The first one is to be alive
+    </li>
+</ol>
+
     <script>
     //el dom costa de dos elementos primarios, el head y el body a estos se los denominan nodos. El objetivo del dom es poder acceder a los elementos de una manera muy facil
 
@@ -24,7 +34,15 @@
     var hola=segundoParrafo.innerHTML;
     document.write(hola);
 
-    
+    //agregando Nodos al Dom
+        var nuevo_elemento= document.createElement("li"),
+            nodo_texto= document.createTextNode("New Text");
+            nuevo_elemento.appendChild(nodo_texto);
+    //var padre= document.getElementById("lista");
+    //obtener todos los documentos que tengan li
+        var padre = document.getElementsByTagName("li")[0].parentNode;
+            padre.appendChild(nuevo_elemento);
+
     </script>
 </body>
 </html>
